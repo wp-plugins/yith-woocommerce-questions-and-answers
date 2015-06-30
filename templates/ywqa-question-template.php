@@ -11,10 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 $ywqa = YITH_WooCommerce_Question_Answer::get_instance();
 ?>
 
-<?php //todo    apply_filters( 'yith_question_answer_before_review', $question ); ?>
 <li id="li-question-<?php echo $question->ID; ?>" class="question-container <?php echo $classes; ?>">
-	<div class="question-votes">
-	</div>
+	<?php do_action('yith_questions_answers_before_content', $question ); ?>
 
 	<div class="question-text <?php echo $classes; ?>">
 		<div class="question-content">
@@ -35,14 +33,7 @@ $ywqa = YITH_WooCommerce_Question_Answer::get_instance();
 				?>
 
 				<span class="answer">
-						<?php
-						if ( $first_answer = $question->get_answers( 1 ) ) {
-							if ( isset( $first_answer[0] ) ) {
-								echo $first_answer[0]->content;
-							}
-						}
-
-						?>
+						<?php echo $first_answer[0]->content; ?>
 				</span>
 			<?php else: ?>
 				<span class="answer"><?php _e( "There are no answers for this question yet.", "ywqa" ); ?></span>

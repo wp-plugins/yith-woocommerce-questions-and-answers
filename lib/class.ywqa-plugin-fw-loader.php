@@ -28,12 +28,12 @@ if ( ! class_exists( 'YWQA_Plugin_FW_Loader' ) ) {
 		/**
 		 * @var string Premium version landing link
 		 */
-		protected $_premium_landing = 'http://yithemes.com/themes/plugins/yith-woocommerce-question-answer/';
+		protected $_premium_landing = '//yithemes.com/themes/plugins/yith-woocommerce-questions-and-answers/';
 
 		/**
 		 * @var string Plugin official documentation
 		 */
-		protected $_official_documentation = 'http://yithemes.com/docs-plugins/yith-woocommerce-question-answer/';
+		protected $_official_documentation = '//yithemes.com/docs-plugins/yith-woocommerce-questions-and-answers/';
 
 		/**
 		 * @var string Plugin panel page
@@ -120,7 +120,7 @@ if ( ! class_exists( 'YWQA_Plugin_FW_Loader' ) ) {
 
 			$admin_tabs['general'] = __( 'General', 'ywqa' );
 
-			if ( ! defined( 'YITH_YWQA_PREMIUM' ) && ( ! defined( 'YITH_YWQA_WAIT' ) ) ) {
+			if ( ! defined( 'YITH_YWQA_PREMIUM' ) )  {
 				$admin_tabs['premium-landing'] = __( 'Premium Version', 'ywqa' );
 			}
 
@@ -180,7 +180,7 @@ if ( ! class_exists( 'YWQA_Plugin_FW_Loader' ) ) {
 			$links[] = '<a href="' . admin_url( "admin.php?page={$this->_panel_page}" ) . '">' . __( 'Settings', 'ywqa' ) . '</a>';
 
 
-			if ( defined( 'YITH_YWQA_FREE_INIT' ) && ( ! defined( 'YITH_YWQA_WAIT' ) ) ) {
+			if ( defined( 'YITH_YWQA_FREE_INIT' ) ) {
 				$links[] = '<a href="' . $this->get_premium_landing_uri() . '" target="_blank">' . __( 'Premium Version', 'ywqa' ) . '</a>';
 			}
 
@@ -203,10 +203,7 @@ if ( ! class_exists( 'YWQA_Plugin_FW_Loader' ) ) {
 		 * @use plugin_row_meta
 		 */
 		public function plugin_row_meta( $plugin_meta, $plugin_file, $plugin_data, $status ) {
-			if ( defined( 'YITH_YWQA_WAIT' ) ) {
-				return $plugin_meta;
 
-			}
 			if ( ( defined( 'YITH_YWQA_INIT' ) && ( YITH_YWQA_INIT == $plugin_file ) ) ||
 			     ( defined( 'YITH_YWQA_FREE_INIT' ) && ( YITH_YWQA_FREE_INIT == $plugin_file ) )
 			) {

@@ -2,10 +2,10 @@
 /*
 Plugin Name: YITH WooCommerce Questions and Answers
 Plugin URI: http://yithemes.com
-Description: Allows your users to ask questions about one specific product they are interested in buying and to get answers from other users.
+Description: YITH WooCoomerce Questions And Answers offers a rapid way to manage dynamic discussions about the products of your shop.
 Author: Yithemes
 Text Domain: ywqa
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://yithemes.com/
 */
 
@@ -40,16 +40,12 @@ register_activation_hook( __FILE__, 'yith_plugin_registration_hook' );
 
 //region    ****    Define constants
 
-if ( ! defined( 'YITH_YWQA_WAIT' ) ) {
-	define( 'YITH_YWQA_WAIT', '1' );
-}
-
 if ( ! defined( 'YITH_YWQA_FREE_INIT' ) ) {
 	define( 'YITH_YWQA_FREE_INIT', plugin_basename( __FILE__ ) );
 }
 
 if ( ! defined( 'YITH_YWQA_VERSION' ) ) {
-	define( 'YITH_YWQA_VERSION', '1.0.0' );
+	define( 'YITH_YWQA_VERSION', '1.0.1' );
 }
 
 if ( ! defined( 'YITH_YWQA_FILE' ) ) {
@@ -72,8 +68,8 @@ if ( ! defined( 'YITH_YWQA_TEMPLATE_PATH' ) ) {
 	define( 'YITH_YWQA_TEMPLATE_PATH', YITH_YWQA_DIR . 'templates' );
 }
 
-if ( ! defined( 'YITH_YWQA_TEMPLATES_DIR' ) ) {
-	define( 'YITH_YWQA_TEMPLATES_DIR', YITH_YWQA_DIR . '/templates/' );
+if ( ! defined( 'YITH_YWQA_TEMPLATE_DIR' ) ) {
+	define( 'YITH_YWQA_TEMPLATE_DIR', YITH_YWQA_DIR . '/templates/' );
 }
 
 if ( ! defined( 'YITH_YWQA_ASSETS_IMAGES_URL' ) ) {
@@ -97,7 +93,8 @@ function yith_ywqa_init() {
 
 	YWQA_Plugin_FW_Loader::get_instance();
 
-	YITH_WooCommerce_Question_Answer::get_instance();
+	global $YWQA;
+	$YWQA = YITH_WooCommerce_Question_Answer::get_instance();
 }
 
 add_action( 'yith_ywqa_init', 'yith_ywqa_init' );

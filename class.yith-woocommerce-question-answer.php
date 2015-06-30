@@ -440,7 +440,9 @@ if ( ! class_exists( 'YITH_WooCommerce_Question_Answer' ) ) {
 			);
 
 			$question = new YWQA_Question( $args );
+			$question = apply_filters( "yith_questions_answers_before_new_question", $question );
 			$question->save();
+			do_action( "yith_questions_answers_after_new_question", $question );
 		}
 
 		/**
@@ -486,7 +488,7 @@ if ( ! class_exists( 'YITH_WooCommerce_Question_Answer' ) ) {
 		}
 
 		/**
-		 * Add scripts
+		 * Add frontend style
 		 *
 		 * @since  1.0
 		 * @author Lorenzo Giuffrida
@@ -640,7 +642,6 @@ if ( ! class_exists( 'YITH_WooCommerce_Question_Answer' ) ) {
 				$product_id
 			);
 
-			error_log( print_r( $query, true ) );
 			$post_ids = $wpdb->get_results( $query, ARRAY_A );
 
 			$questions = array();

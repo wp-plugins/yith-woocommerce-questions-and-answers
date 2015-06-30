@@ -4,7 +4,7 @@ Contributors: yithemes
 Tags: woocommerce, e-commerce, ecommerce, shop, product details, question, questions, answer, answers, product question, product, pre sale question, ask a question, product enquiry, yith, plugin
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,13 +16,16 @@ Research states that users read buyers feedback and reviews before purchasing a 
 
 Offer your visitors a way to interact asking and answering questions with YITH WooCoomerce Questions And Answers: the perfect way to have a self-sufficient system in which everyone gets what he needs to be always more positive about what he is going to purchase.
 
-
 = Main features =
 
 * Let your users ask questions on specific products.
 * Let your users answer a question on the product page.
 * Manage easily questions and answers.
 * FAQ mode, questions and answers are created only from the back end.
+
+For a more detailed list of options and features of the plugin, please look at the [official documentation](//yithemes.com/docs-plugins/yith-woocommerce-questions-and-answers/ "Yith WooCommerce Questions and Answers official documentation").
+
+Discover all the features of the plugin and install it in your theme: the result will be extremely satisfying.
 
 == Installation ==
 
@@ -47,7 +50,11 @@ YITH WooCommerce Questions and Answers will add a new tab called "Advanced Revie
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.1 - RELEASED: JUN 30, 2015 =
+
+* Added: update YITH plugin framework
+
+= 1.0.0 - RELEASED: JUN 03, 2015 =
 
 * Initial release
 
@@ -62,4 +69,3 @@ If you have created your own language pack, or have an update for an existing on
 
  = Available Languages =
  * English
- 

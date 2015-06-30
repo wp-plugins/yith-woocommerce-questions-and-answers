@@ -1,23 +1,11 @@
+div.questions-section a {
+    border: none;
+}
+
 ol.ywqa-question-list {
     list-style-type: none;
     font-size: 14px;
     padding-left: 0;
-}
-
-ol.ywqa-answer-list {
-    list-style-type: none;
-    font-size: 14px;
-    padding-left: 0;
-}
-
-div.question-votes {
-    display: none;
-    float: left;
-    width: 75px;
-    height: 60px;
-    border: 1px solid #c7c7c7;
-    text-align: center;
-    margin-right: 20px;
 }
 
 div.question-content {

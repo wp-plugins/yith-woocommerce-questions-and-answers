@@ -64,6 +64,5 @@ $item_shown = 0;
 		</div>
 	<?php endif; ?>
 	<div class="clearfix"></div>
-
 	<?php do_action( 'yith_question_answer_after_question_list_section' ); ?>
 </div>

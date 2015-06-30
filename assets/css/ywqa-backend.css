@@ -21,3 +21,8 @@ span.success {
 #submit-answer {
     display: block;
 }
+
+span.response-to,
+span.for-product {
+    font-weight: 600;
+}

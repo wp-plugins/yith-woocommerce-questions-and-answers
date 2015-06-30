@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YIT WooCommerce Advanced Reviews\n"
-"POT-Creation-Date: 2015-06-08 12:40+0100\n"
+"POT-Creation-Date: 2015-06-30 11:04+0100\n"
 "PO-Revision-Date: 2015-05-11 14:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: Your Inspiration Themes <plugins@yithemes.com>\n"
@@ -20,93 +20,93 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 "X-Poedit-SearchPathExcluded-0: ../plugin-fw\n"
 
-#: ../class.yith-woocommerce-question-answer.php:185
-#: ../class.yith-woocommerce-question-answer.php:203
+#: ../class.yith-woocommerce-question-answer.php:183
+#: ../class.yith-woocommerce-question-answer.php:201
 msgid "Product: "
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:208
+#: ../class.yith-woocommerce-question-answer.php:206
 msgid "Question: "
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:228
+#: ../class.yith-woocommerce-question-answer.php:226
 msgid "Select product"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:366
+#: ../class.yith-woocommerce-question-answer.php:362
 msgctxt "Post Type General Name"
 msgid "Questions & Answers"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:367
+#: ../class.yith-woocommerce-question-answer.php:363
 msgctxt "Post Type Singular Name"
 msgid "Question"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:368
-#: ../class.yith-woocommerce-question-answer.php:384
-#: ../class.yith-woocommerce-question-answer.php:551
+#: ../class.yith-woocommerce-question-answer.php:364
+#: ../class.yith-woocommerce-question-answer.php:380
+#: ../class.yith-woocommerce-question-answer.php:549
 msgid "Questions & Answers"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:369
+#: ../class.yith-woocommerce-question-answer.php:365
 msgid "Parent discussion"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:370
+#: ../class.yith-woocommerce-question-answer.php:366
 msgid "All discussion"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:371
+#: ../class.yith-woocommerce-question-answer.php:367
 msgid "View discussions"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:372
+#: ../class.yith-woocommerce-question-answer.php:368
 msgid "Add new question"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:373
+#: ../class.yith-woocommerce-question-answer.php:369
 msgid "Add new"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:374
+#: ../class.yith-woocommerce-question-answer.php:370
 msgid "Edit discussion"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:375
+#: ../class.yith-woocommerce-question-answer.php:371
 msgid "Update discussion"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:376
+#: ../class.yith-woocommerce-question-answer.php:372
 msgid "Search discussion"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:377
+#: ../class.yith-woocommerce-question-answer.php:373
 msgid "Not found"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:378
+#: ../class.yith-woocommerce-question-answer.php:374
 msgid "Not found in the bin"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:385
+#: ../class.yith-woocommerce-question-answer.php:381
 msgid "YITH Questions and Answers"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:435
-#: ../class.yith-woocommerce-question-answer.php:477
+#: ../class.yith-woocommerce-question-answer.php:431
+#: ../class.yith-woocommerce-question-answer.php:475
 msgid "Please retry submitting your question or answer."
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:531
+#: ../class.yith-woocommerce-question-answer.php:529
 msgid "You need to write something!"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:532
+#: ../class.yith-woocommerce-question-answer.php:530
 msgid "Answer correctly sent."
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:533
+#: ../class.yith-woocommerce-question-answer.php:531
 msgid "An error occurred, your answer has not been added."
 msgstr ""
 
@@ -122,6 +122,10 @@ msgid ""
 "while you are using the premium one."
 msgstr ""
 
+#: ../lib/class.ywqa-discussion.php:96
+msgid "Anonymous"
+msgstr ""
+
 #: ../lib/class.ywqa-plugin-fw-loader.php:121
 msgid "General"
 msgstr ""
@@ -135,26 +139,25 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: ../lib/class.ywqa-plugin-fw-loader.php:213
+#: ../lib/class.ywqa-plugin-fw-loader.php:210
 msgid "Plugin Documentation"
 msgstr ""
 
-#: ../lib/class.ywqa-plugin-fw-loader.php:226
+#: ../lib/class.ywqa-plugin-fw-loader.php:223
 msgid ""
 "YITH WooCommerce Questions and Answers is available in an outstanding "
 "PREMIUM version with many new options, discover it now."
 msgstr ""
 
-#: ../lib/class.ywqa-plugin-fw-loader.php:227
+#: ../lib/class.ywqa-plugin-fw-loader.php:224
 msgid "Premium version"
 msgstr ""
 
-#: ../lib/class.ywqa-plugin-fw-loader.php:234
-#: ../plugin-options/general-options.php:56
+#: ../lib/class.ywqa-plugin-fw-loader.php:231
 msgid "YITH WooCommerce Questions and Answers"
 msgstr ""
 
-#: ../lib/class.ywqa-plugin-fw-loader.php:235
+#: ../lib/class.ywqa-plugin-fw-loader.php:232
 msgid ""
 "In YIT Plugins tab you can find YITH WooCommerce Questions & Answers options."
 "<br> From this menu you can access all settings of YITH plugins activated."
@@ -184,44 +187,9 @@ msgid ""
 "mode."
 msgstr ""
 
-#: ../plugin-options/general-options.php:53
-msgid "Upgrade to the PREMIUM VERSION"
-msgstr ""
-
-#: ../plugin-options/general-options.php:57
-msgid "Discover Advanced Features"
-msgstr ""
-
-#: ../plugin-options/general-options.php:58
-msgid ""
-"Upgrade to the PREMIUM VERSION of YITH WOOCOMMERCE QUESTIONS AND ANSWERS to "
-"benefit from all features!"
-msgstr ""
-
-#: ../plugin-options/general-options.php:62
-msgid ""
-"See the YITH WooCommerce Questions and Answers plugin with full premium "
-"features in action"
-msgstr ""
-
-#: ../plugin-options/general-options.php:64
-msgid "Get Support and Pro Features"
-msgstr ""
-
-#: ../plugin-options/general-options.php:65
-msgid ""
-"By purchasing the premium version of the plugin, you will take advantage of "
-"the advanced features of the product and you will get one year of free "
-"updates and support through our platform available 24h/24."
-msgstr ""
-
 #: ../templates/ywqa-answer-template.php:21
 #, php-format
 msgid "%s answered on %s"
-msgstr ""
-
-#: ../templates/ywqa-answers-template.php:24
-msgid "Back to questions"
 msgstr ""
 
 #: ../templates/ywqa-answers-template.php:24
@@ -250,19 +218,19 @@ msgstr ""
 msgid "There are no answers to this question, be the first to respond."
 msgstr ""
 
-#: ../templates/ywqa-question-template.php:31
+#: ../templates/ywqa-question-template.php:29
 msgid "Answered by the admin"
 msgstr ""
 
-#: ../templates/ywqa-question-template.php:33
+#: ../templates/ywqa-question-template.php:31
 msgid "A"
 msgstr ""
 
-#: ../templates/ywqa-question-template.php:48
+#: ../templates/ywqa-question-template.php:39
 msgid "There are no answers for this question yet."
 msgstr ""
 
-#: ../templates/ywqa-question-template.php:56
+#: ../templates/ywqa-question-template.php:47
 #, php-format
 msgid "Show all %s answers"
 msgstr ""

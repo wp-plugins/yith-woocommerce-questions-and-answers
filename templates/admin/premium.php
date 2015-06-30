@@ -1,12 +1,8 @@
-<?php
-global $YWQA_AdvancedReview;
-?>
-
 <style>
     .section{
         margin-left: -20px;
         margin-right: -20px;
-        font-family: "Raleway";
+        font-family: "Raleway",san-serif;
     }
     .section h1{
         text-align: center;
@@ -19,14 +15,15 @@ global $YWQA_AdvancedReview;
         width: 100%;
         margin: 50px 0 0;
     }
+    .section ul{
+        list-style-type: disc;
+        padding-left: 15px;
+    }
     .section:nth-child(even){
         background-color: #fff;
     }
     .section:nth-child(odd){
         background-color: #f1f1f1;
-    }
-    .section-title{
-        display: table;
     }
     .section .section-title img{
         display: table-cell;
@@ -34,9 +31,9 @@ global $YWQA_AdvancedReview;
         width: auto;
         margin-right: 15px;
     }
-
-    .section .section-title h2{
-        display: table-cell;
+    .section h2,
+    .section h3 {
+        display: inline-block;
         vertical-align: middle;
         padding: 0;
         font-size: 24px;
@@ -45,16 +42,20 @@ global $YWQA_AdvancedReview;
         text-transform: uppercase;
     }
 
-    .section .section-title h3 {
+    .section .section-title h2{
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .section-title{
+        display: table;
+    }
+
+    .section h3 {
         font-size: 14px;
         line-height: 28px;
         margin-bottom: 0;
         display: block;
-        padding: 0;
-        font-size: 24px;
-        font-weight: 700;
-        color: #808a97;
-        text-transform: uppercase;
     }
 
     .section p{
@@ -112,7 +113,7 @@ global $YWQA_AdvancedReview;
         border-radius: 6px;
         height: 60px;
         float: right;
-        background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL?>upgrade.png) #ff643f no-repeat 13px 13px;
+        background: url(<?php echo YITH_YWQA_URL?>assets/images/upgrade.png) #ff643f no-repeat 13px 13px;
         border-color: #ff643f;
         box-shadow: none;
         outline: none;
@@ -124,7 +125,7 @@ global $YWQA_AdvancedReview;
     .premium-cta a.button:active,
     .premium-cta a.button:focus{
         color: #fff;
-        background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL?>upgrade.png) #971d00 no-repeat 13px 13px;
+        background: url(<?php echo YITH_YWQA_URL?>assets/images/upgrade.png) #971d00 no-repeat 13px 13px;
         border-color: #971d00;
         box-shadow: none;
         outline: none;
@@ -146,6 +147,19 @@ global $YWQA_AdvancedReview;
         background: none;
         font-weight: 800;
         color: #fff;
+    }
+
+    @media (max-width: 768px) {
+        .section{margin: 0}
+        .premium-cta p{
+            width: 100%;
+        }
+        .premium-cta{
+            text-align: center;
+        }
+        .premium-cta a.button{
+            float: none;
+        }
     }
 
     @media (max-width: 480px){
@@ -185,230 +199,134 @@ global $YWQA_AdvancedReview;
         <div class="landing-container">
             <div class="premium-cta">
                 <p>
-                    Upgrade to the <span class="highlight">premium version</span>
-                    of <span class="highlight">YITH WooCommerce Advanced Reviews</span> to benefit from all features!
+                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Questions and Answers%2$s to benefit from all features!','ywqa'),'<span class="highlight">','</span>' );?>
                 </p>
-                <a href="<?php echo $YWQA_AdvancedReview->get_premium_landing_uri(); ?>" target="_blank" class="premium-cta-button button btn">
-                    <span class="highlight">UPGRADE</span>
-                    <span>to the premium version</span>
+                <a href="<?php echo YWQA_Plugin_FW_Loader::get_instance()->get_premium_landing_uri(); ?>" target="_blank" class="premium-cta-button button btn">
+                    <span class="highlight"><?php _e('UPGRADE','ywqa');?></span>
+                    <span><?php _e('to the premium version','ywqa');?></span>
                 </a>
             </div>
         </div>
     </div>
-    <div class="section section-even clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>background1.png) no-repeat #fff; background-position: 85% 75%">
-        <h1>Premium Features</h1>
+    <div class="section section-even clear" style="background: url(<?php echo YITH_YWQA_URL ?>assets/images/01-bg.png) no-repeat #fff; background-position: 85% 75%">
+        <h1><?php _e('Premium Features','ywqa');?></h1>
         <div class="landing-container">
             <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>02.png" alt="Attachment List" />
+                <img src="<?php echo YITH_YWQA_URL ?>assets/images/01.png" alt="" />
             </div>
             <div class="col-2">
                 <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>icon1.png" alt="Attachment List" />
-                    <h2>MODAL WINDOW</h2>
-                </div>
-                <p>Enabling this option, the result of the review filter will be slightly different: the filtered review will be showed in a modal window.</p>
-            </div>
-        </div>
-    </div>
-    <div class="section section-odd clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>background2.png) no-repeat #f1f1f1; background-position: 15% 100%">
-        <div class="landing-container">
-            <div class="col-2">
-                <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>icon2.png" alt="Review Title"/>
-                    <h2>Load More</h2>
-                </div>
-                <p>Do you want to hide some of your reviews? Set how many to show with the relative option, and if you want to let users read the rest of them, choose the load more option.</p>
-            </div>
-            <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>01.png" alt="Review Title" />
-            </div>
-        </div>
-    </div>
-    <div class="section section-even clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>background3.png) no-repeat #fff; background-position: 85% 100%">
-        <div class="landing-container">
-            <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>03.png" alt="Vote the review" />
-            </div>
-            <div class="col-2">
-                <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>icon3.png" alt="Vote the review" />
-                    <h2>Vote the review</h2>
-                </div>
-                <p>Have you found a review that was particularly good and explicative and that helped you a lot choose a product? Give prominence to it and express your satisfaction or disappointment through the dedicated “upvote” or “downvote” buttons.</p>
-            </div>
-        </div>
-    </div>
-    <div class="section section-odd clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>background4.png) no-repeat #f1f1f1; background-position: 15% 100%">
-        <div class="landing-container">
-            <div class="col-2">
-                <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>icon4.png" alt="Number" />
-                    <h2>Number</h2>
-                </div>
-                <p>This feature allows you to provide users with another piece of information concerning each individual review: it displays the number of users that have appreciated it by expressing their preference for it.</p>
-            </div>
-            <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>04.png" alt="Number" />
-            </div>
-        </div>
-    </div>
-    <div class="section section-even clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>background5.png) no-repeat #fff; background-position: 85% 100%">
-        <div class="landing-container">
-            <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>05.png" alt="Filter by rating" />
-            </div>
-            <div class="col-2">
-                <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL?>icon5.png" alt="Filter by rating" />
-                    <h2>Filter by rating</h2>
-                </div>
-                <p>The product you are watching has too many reviews?</p>
-                <p>Do not worry, it is possible to filter reviews according to the vote users have given to the product. Thanks to this feature, you will be able to filter and analyse results simply and quickly, without having to scroll the entire list to find what you need.</p>
-            </div>
-        </div>
-    </div>
-    <div class="section section-odd clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>background4.png) no-repeat #f1f1f1; background-position: 15% 100%">
-        <div class="landing-container">
-            <div class="col-2">
-                <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL?>icon6.png" alt="Filter by rating" />
-                    <h2>Reply to review</h2>
-                </div>
-                <p>You can control the answers of the reviews with the options "reply to all", "none" or "only to the administrator of the site".</p>
-            </div>
-            <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>06.png" alt="Filter by rating" />
-            </div>
-        </div>
-    </div>
-    <div class="section section-even clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>07-bg.png) no-repeat #fff; background-position: 85% 100%">
-        <div class="landing-container">
-            <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>07.png" alt="Filter by rating" />
-            </div>
-            <div class="col-2">
-                <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL?>07-icon.png" alt="Filter by rating" />
-                    <h2>Manual review approval</h2>
-                </div>
-                <p>Sometimes you might feel the need to approve manually reviews that your users write for your products.
-                This option allows you to filter all reviews, and it will be always up to you to approve them before
-                they can be shown to everyone.</p>
-            </div>
-        </div>
-    </div>
-    <div class="section section-odd clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>08-bg.png) no-repeat #f1f1f1; background-position: 15% 100%">
-        <div class="landing-container">
-            <div class="col-2">
-                <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL?>08-icon.png" alt="ENABLE VOTE FOR ALL" />
-                    <h2>ENABLE VOTE FOR ALL</h2>
-                </div>
-                <p>Do you want to prevent users to <b>vote reviews?</b> Set the options following your needs, choosing whether only registered users can vote or anyone can.</p>
-            </div>
-            <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>08.png" alt="ENABLE VOTE FOR ALL" />
-            </div>
-        </div>
-    </div>
-    <div class="section section-even clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>09-bg.png) no-repeat #fff; background-position: 85% 100%">
-        <div class="landing-container">
-            <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>09.png" alt="INAPPROPRIATE REVIEWS" />
-            </div>
-            <div class="col-2">
-                <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL?>09-icon.png" alt="INAPPROPRIATE REVIEWS" />
-                    <h2>INAPPROPRIATE REVIEWS</h2>
+                    <img src="<?php echo YITH_YWQA_URL ?>assets/images/01-icon.png" alt=""/>
+                    <h2><?php _e('Number of answers ','ywqa');?></h2>
                 </div>
                 <p>
-                    Among the different reviews your products receive, some of them might be way out of line, or contain
-                    gross words. <b>Give your users the freedom to report them as "inappropriate":</b> in this way, after a
-                    certain number of markings (that you can choose), the review will be automatically removed from the
-                    system. Clear your shop from impolite users.
+                    <?php echo sprintf( __('The more followers has a question, the more answers are likely to be left for it. If you do not want your product page
+                     to get extremely long, enable %1$sanswer pagination%2$s by specifying the number of elements you want to show at a time.', 'ywqa'), '<b>', '</b>');?>
                 </p>
             </div>
         </div>
     </div>
-    <div class="section section-odd clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>10-bg.png) no-repeat #f1f1f1; background-position: 15% 100%">
+    <div class="section section-odd clear" style="background: url(<?php echo YITH_YWQA_URL ?>assets/images/02-bg.png) no-repeat #f1f1f1; background-position: 15% 100%">
         <div class="landing-container">
             <div class="col-2">
                 <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL?>10-icon.png" alt="Filter by rating" />
-                    <h2>FEATURED REVIEWS</h2>
+                    <img src="<?php echo YITH_YWQA_URL ?>assets/images/02-icon.png" alt="icon 02" />
+                    <h2><?php _e('Voting system','ywqa');?></h2>
                 </div>
                 <p>
-                    <b>Did you like a review so much and you want to highlight it? That's easy to do!</b> Go in the review list
-                    and click on the icon of that specific review: this will appear ahead of the other reviews of the
-                    product with a slightly different style. Your users will read it for sure!
+                    <?php echo sprintf( __( 'Increase and improve interaction between users and your shop. With the premium version of the plugin, you will be able to allow all registered users to leave a %1$spositive or negative vote%2$s to questions and answers of each product.
+                    A very good strategy to highlight questions and answers that can be useful to other customers.','ywqa'),  '<b>', '</b>');?>
                 </p>
             </div>
             <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>10.png" alt="Filter by rating" />
+                <img src="<?php echo YITH_YWQA_URL ?>assets/images/02.png" alt="" />
             </div>
         </div>
     </div>
-    <div class="section section-even clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>11-bg.png) no-repeat #fff; background-position: 85% 100%">
+    <div class="section section-even clear" style="background: url(<?php echo YITH_YWQA_URL ?>assets/images/03-bg.png) no-repeat #fff; background-position: 85% 100%">
         <div class="landing-container">
             <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>11.png" alt="MORE DETAILS" />
+                <img src="<?php echo YITH_YWQA_URL ?>assets/images/03.png" alt="" />
             </div>
             <div class="col-2">
                 <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL?>11-icon.png" alt="MORE DETAILS" />
-                    <h2>MORE DETAILS</h2>
+                    <img src="<?php echo YITH_YWQA_URL ?>assets/images/03-icon.png" alt="icon 03" />
+                    <h2><?php _e( 'Email notification','ywqa');?></h2>
                 </div>
                 <p>
-                    The Reviews custom post type gets <b>richer</b> and <b>grants</b> you many new details about the reviews in a single screen.<br>
-                    At a glance, you could see how many people consider the review useful, if this has been reported as inappropriate, if a review is featured, or if the replies are blocked.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="section section-odd clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>12-bg.png) no-repeat #f1f1f1; background-position: 15% 100%">
-        <div class="landing-container">
-            <div class="col-2">
-                <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL?>12-icon.png" alt="REPORT" />
-                    <h2>REPORT</h2>
-                </div>
-                <p>
-                    A detailed report that lets you control the <b>information</b> of the reviews for each product. You can
-                    easily discover which are the most reviewed products, and which are the best and worst voted.
-                </p>
-            </div>
-            <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>12.png" alt="REPORT" />
-            </div>
-        </div>
-    </div>
-    <div class="section section-even clear" style="background: url(<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>13-bg.png) no-repeat #fff; background-position: 85% 100%">
-        <div class="landing-container">
-            <div class="col-1">
-                <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL ?>13.png" alt="STOP REPLY" />
-            </div>
-            <div class="col-2">
-                <div class="section-title">
-                    <img src="<?php echo YITH_YWQA_ASSETS_IMAGES_URL?>13-icon.png" alt="STOP REPLY" />
-                    <h2>STOP REPLY</h2>
-                </div>
-                <p>
-                    If you want to prevent the replies for specific reviews, you don't have to block the entire reply
-                    system. Go to the Review custom post type and <b>block the replies only for the reviews you want</b>.
+                    <?php echo sprintf( __( 'Keep always up-to-date about what users write in your shop. Enable %1$semail notification%2$s to be informed any time a new question is added
+                    to one of your products and read the content of it in the email message you get. With the option %1$s"User notification"%2$s,
+                    you can notify users as soon as an answer is given to the question they have previously posed.','ywqa' ),'<b>','</b>' );?>
                 </p>
             </div>
         </div>
     </div>
+
+
+
+    <div class="section section-odd clear" style="background: url(<?php echo YITH_YWQA_URL ?>assets/images/04-bg.png) no-repeat #f1f1f1; background-position: 15% 100%">
+        <div class="landing-container">
+            <div class="col-2">
+                <div class="section-title">
+                    <img src="<?php echo YITH_YWQA_URL ?>assets/images/04-icon.png" alt="icon 04" />
+                    <h2><?php _e('Inappropriate content','ywqa');?></h2>
+                </div>
+                <p>
+                    <?php echo sprintf( __( 'There might always be someone in the web, who wants to disturb or leave offensive, inappropriate or simply unsuitable answers.
+                    With the premium version of the plugin, your users will be able to "monitor" this kind of answers on
+                    their own and report questions and/or answers that are inappropriate. %1$sThese answers will be automatically removed%2$s if
+                     a specific number of users that you can set in your plugin reports them as an abuse.','ywqa' ),'<b>','</b>' );?>
+                </p>
+            </div>
+            <div class="col-1">
+                <img src="<?php echo YITH_YWQA_URL ?>assets/images/04.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="section section-even clear" style="background: url(<?php echo YITH_YWQA_URL ?>assets/images/05-bg.png) no-repeat #fff; background-position: 85% 100%">
+        <div class="landing-container">
+            <div class="col-1">
+                <img src="<?php echo YITH_YWQA_URL ?>assets/images/05.png" alt="" />
+            </div>
+            <div class="col-2">
+                <div class="section-title">
+                    <img src="<?php echo YITH_YWQA_URL?>assets/images/05-icon.png" alt="icon 05" />
+                    <h2><?php _e('Incognito mode','ywqa');?></h2>
+                </div>
+                <p>
+                    <?php echo sprintf( __('Working principles are always the same. Each question will get its own answers. The only difference is that the name
+                    of users who have posed a question or given an answer will not be shown and they will be %1$sanonymous%2$s to users of the shop, either they are registered or not.','ywqa'),'<b>','</b>' );?></p>
+            </div>
+        </div>
+    </div>
+    <div class="section section-odd clear" style="background: url(<?php echo YITH_YWQA_URL ?>assets/images/06-bg.png) no-repeat #f1f1f1; background-position: 15% 100%">
+        <div class="landing-container">
+            <div class="col-2">
+                <div class="section-title">
+                    <img src="<?php echo YITH_YWQA_URL ?>assets/images/06-icon.png" alt="icon 04" />
+                    <h2><?php _e('Invite to answer','ywqa');?></h2>
+                </div>
+                <p>
+                    <?php echo sprintf( __( 'Who may better answer to a new question than those who have purchased a product? 
+                    With this innovative feature, you will be able to automatically %1$ssend an email to customers that have purchased a product%2$s on 
+                    which a question has been added and invite them to answer. You can choose to send an email to all customers or let the plugin select only some of them randomly. ','ywqa' ),'<b>','</b>' );?>
+                </p>
+            </div>
+            <div class="col-1">
+                <img src="<?php echo YITH_YWQA_URL ?>assets/images/06.png" alt="" />
+            </div>
+        </div>
+    </div>
+
     <div class="section section-cta section-odd">
         <div class="landing-container">
             <div class="premium-cta">
                 <p>
-                    Upgrade to the <span class="highlight">premium version</span>
-                    of <span class="highlight">YITH WooCommerce Advanced Reviews</span> to benefit from all features!
+                    <?php echo sprintf( __('Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Questions and Answers%2$s to benefit from all features!','ywqa'),'<span class="highlight">','</span>' );?>
                 </p>
-                <a href="<?php echo $YWQA_AdvancedReview->get_premium_landing_uri(); ?>" target="_blank" class="premium-cta-button button btn">
-                    <span class="highlight">UPGRADE</span>
-                    <span>to the premium version</span>
+                <a href="<?php echo YWQA_Plugin_FW_Loader::get_instance()->get_premium_landing_uri(); ?>" target="_blank" class="premium-cta-button button btn">
+                    <span class="highlight"><?php _e('UPGRADE','ywqa');?></span>
+                    <span><?php _e('to the premium version','ywqa');?></span>
                 </a>
             </div>
         </div>
