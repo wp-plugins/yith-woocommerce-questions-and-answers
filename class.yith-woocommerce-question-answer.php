@@ -101,7 +101,10 @@ if ( ! class_exists( 'YITH_WooCommerce_Question_Answer' ) ) {
 			add_action( 'admin_head-post-new.php', array( $this, 'limit_products_creation' ) );
 			add_action( 'admin_head-edit.php', array( $this, 'limit_products_creation' ) );
 			add_action( 'admin_menu', array( $this, 'remove_add_product_link' ) );
+
 		}
+
+
 
 		/**
 		 * Init plugin settings
@@ -387,7 +390,7 @@ if ( ! class_exists( 'YITH_WooCommerce_Question_Answer' ) ) {
 					//'author',
 				),
 				'hierarchical'        => false,
-				'public'              => true,
+				'public'              => false,
 				'show_ui'             => true,
 				'show_in_menu'        => true,
 				'show_in_nav_menus'   => false,
@@ -395,7 +398,7 @@ if ( ! class_exists( 'YITH_WooCommerce_Question_Answer' ) ) {
 				'menu_position'       => 9,
 				'can_export'          => false,
 				'has_archive'         => false,
-				'exclude_from_search' => false,
+				'exclude_from_search' => true,
 				'menu_icon'           => 'dashicons-clipboard',
 				'query_var'           => false
 			);
@@ -574,17 +577,17 @@ if ( ! class_exists( 'YITH_WooCommerce_Question_Answer' ) ) {
 
 			if ( isset( $_GET["reply-to-question"] ) ) {
 				$question = new YWQA_Question( $_GET["reply-to-question"] );
-				wc_get_template( 'ywqa-answers-template.php', array( 'question' => $question ), '', YITH_YWQA_TEMPLATES_DIR );
+				wc_get_template( 'ywqa-answers-template.php', array( 'question' => $question ), '', YITH_YWQA_TEMPLATE_DIR );
 			} else if ( isset( $_GET["show-all-questions"] ) ) {
 				wc_get_template( 'ywqa-questions-template.php', array(
 					'max_items'     => - 1,
 					'only_answered' => 0,
-				), '', YITH_YWQA_TEMPLATES_DIR );
+				), '', YITH_YWQA_TEMPLATE_DIR );
 			} else {
 				wc_get_template( 'ywqa-questions-template.php', array(
 					'max_items'     => $this->questions_to_show,
 					'only_answered' => 1,
-				), '', YITH_YWQA_TEMPLATES_DIR );
+				), '', YITH_YWQA_TEMPLATE_DIR );
 			}
 		}
 
@@ -694,7 +697,7 @@ if ( ! class_exists( 'YITH_WooCommerce_Question_Answer' ) ) {
 			wc_get_template( 'ywqa-question-template.php', array(
 				'question' => $question,
 				'classes'  => $classes
-			), '', YITH_YWQA_TEMPLATES_DIR );
+			), '', YITH_YWQA_TEMPLATE_DIR );
 		}
 
 		/**
@@ -720,7 +723,7 @@ if ( ! class_exists( 'YITH_WooCommerce_Question_Answer' ) ) {
 			wc_get_template( 'ywqa-answer-template.php', array(
 				'answer'  => $answer,
 				'classes' => $classes
-			), '', YITH_YWQA_TEMPLATES_DIR );
+			), '', YITH_YWQA_TEMPLATE_DIR );
 		}
 	}
 }
