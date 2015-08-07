@@ -317,6 +317,21 @@
             </div>
         </div>
     </div>
+    <div class="section section-even clear" style="background: url(<?php echo YITH_YWQA_URL ?>assets/images/07-bg.png) no-repeat #fff; background-position: 85% 100%">
+        <div class="landing-container">
+            <div class="col-1">
+                <img src="<?php echo YITH_YWQA_URL ?>assets/images/07.png" alt="" />
+            </div>
+            <div class="col-2">
+                <div class="section-title">
+                    <img src="<?php echo YITH_YWQA_URL?>assets/images/07-icon.png" alt="icon 07" />
+                    <h2><?php _e('reCAPTCHA','ywqa');?></h2>
+                </div>
+                <p>
+                    <?php echo sprintf( __('Make your questions and answers system safer: activate the recaptcha and avoid all the spam contents you can get.The premium version of the plugin offers the new version of Google\'s captcha, the %1$sNo CAPTCHA reCAPTCHA%2$s, to give you the freedom to use an up-to-date and simple system for your users.','ywqa'),'<b>','</b>' );?></p>
+            </div>
+        </div>
+    </div>
 
     <div class="section section-cta section-odd">
         <div class="landing-container">
