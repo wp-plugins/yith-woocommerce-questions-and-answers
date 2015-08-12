@@ -3,8 +3,8 @@
 Contributors: yithemes
 Tags: woocommerce, e-commerce, ecommerce, shop, product details, question, questions, answer, answers, product question, product, pre sale question, ask a question, product enquiry, yith, plugin
 Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.0.2
+Tested up to: 4.2.4
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,15 +50,19 @@ YITH WooCommerce Questions and Answers will add a new tab called "Advanced Revie
 
 == Changelog ==
 
-= 1.0.2 - RELEASED: JUL 28, 2015 =
+= Version 1.0.3 - RELEASED: AUG 12, 2015 =
+
+* Tweak: update YITH Plugin framework.
+
+= Version 1.0.2 - RELEASED: JUL 28, 2015 =
 
 * Fixed: questions excluded from site search
 
-= 1.0.1 - RELEASED: JUN 30, 2015 =
+= Version 1.0.1 - RELEASED: JUN 30, 2015 =
 
 * Added: update YITH plugin framework
 
-= 1.0.0 - RELEASED: JUN 03, 2015 =
+= Version 1.0.0 - RELEASED: JUN 03, 2015 =
 
 * Initial release
 
