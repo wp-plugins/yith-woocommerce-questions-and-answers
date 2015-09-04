@@ -111,12 +111,12 @@ if ( ! class_exists( 'YWQA_Discussion' ) ) {
 			}
 
 			return array(
-				"content"    => $post->post_title,
+				"date"       => $post->post_date,
 				"author_id"  => $post->post_author,
+				"content"    => $post->post_title,
 				"product_id" => get_post_meta( $post->ID, YWQA_METAKEY_PRODUCT_ID, true ),
 				"ID"         => $post->ID,
 				"parent_id"  => $post->post_parent,
-				"date"       => $post->post_date
 			);
 		}
 

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YIT WooCommerce Advanced Reviews\n"
-"POT-Creation-Date: 2015-06-30 11:04+0100\n"
+"POT-Creation-Date: 2015-09-04 17:00+0200\n"
 "PO-Revision-Date: 2015-05-11 14:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: Your Inspiration Themes <plugins@yithemes.com>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.1\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_n:1,2;__ngettext:1,2;"
 "__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;"
 "_nx_noop:4c,1,2\n"
@@ -20,93 +20,93 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 "X-Poedit-SearchPathExcluded-0: ../plugin-fw\n"
 
-#: ../class.yith-woocommerce-question-answer.php:183
-#: ../class.yith-woocommerce-question-answer.php:201
+#: ../class.yith-woocommerce-question-answer.php:198
+#: ../class.yith-woocommerce-question-answer.php:216
 msgid "Product: "
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:206
+#: ../class.yith-woocommerce-question-answer.php:221
 msgid "Question: "
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:226
+#: ../class.yith-woocommerce-question-answer.php:241
 msgid "Select product"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:362
+#: ../class.yith-woocommerce-question-answer.php:384
 msgctxt "Post Type General Name"
 msgid "Questions & Answers"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:363
+#: ../class.yith-woocommerce-question-answer.php:385
 msgctxt "Post Type Singular Name"
 msgid "Question"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:364
-#: ../class.yith-woocommerce-question-answer.php:380
-#: ../class.yith-woocommerce-question-answer.php:549
+#: ../class.yith-woocommerce-question-answer.php:386
+#: ../class.yith-woocommerce-question-answer.php:402
+#: ../class.yith-woocommerce-question-answer.php:576
 msgid "Questions & Answers"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:365
+#: ../class.yith-woocommerce-question-answer.php:387
 msgid "Parent discussion"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:366
+#: ../class.yith-woocommerce-question-answer.php:388
 msgid "All discussion"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:367
+#: ../class.yith-woocommerce-question-answer.php:389
 msgid "View discussions"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:368
+#: ../class.yith-woocommerce-question-answer.php:390
 msgid "Add new question"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:369
+#: ../class.yith-woocommerce-question-answer.php:391
 msgid "Add new"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:370
+#: ../class.yith-woocommerce-question-answer.php:392
 msgid "Edit discussion"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:371
+#: ../class.yith-woocommerce-question-answer.php:393
 msgid "Update discussion"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:372
+#: ../class.yith-woocommerce-question-answer.php:394
 msgid "Search discussion"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:373
+#: ../class.yith-woocommerce-question-answer.php:395
 msgid "Not found"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:374
+#: ../class.yith-woocommerce-question-answer.php:396
 msgid "Not found in the bin"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:381
+#: ../class.yith-woocommerce-question-answer.php:403
 msgid "YITH Questions and Answers"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:431
-#: ../class.yith-woocommerce-question-answer.php:475
+#: ../class.yith-woocommerce-question-answer.php:454
+#: ../class.yith-woocommerce-question-answer.php:499
 msgid "Please retry submitting your question or answer."
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:529
+#: ../class.yith-woocommerce-question-answer.php:555
 msgid "You need to write something!"
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:530
+#: ../class.yith-woocommerce-question-answer.php:556
 msgid "Answer correctly sent."
 msgstr ""
 
-#: ../class.yith-woocommerce-question-answer.php:531
+#: ../class.yith-woocommerce-question-answer.php:557
 msgid "An error occurred, your answer has not been added."
 msgstr ""
 
@@ -187,6 +187,123 @@ msgid ""
 "mode."
 msgstr ""
 
+#: ../templates/admin/premium.php:203 ../templates/admin/premium.php:329
+#, php-format
+msgid ""
+"Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce Questions and "
+"Answers%2$s to benefit from all features!"
+msgstr ""
+
+#: ../templates/admin/premium.php:206 ../templates/admin/premium.php:332
+msgid "UPGRADE"
+msgstr ""
+
+#: ../templates/admin/premium.php:207 ../templates/admin/premium.php:333
+msgid "to the premium version"
+msgstr ""
+
+#: ../templates/admin/premium.php:213
+msgid "Premium Features"
+msgstr ""
+
+#: ../templates/admin/premium.php:221
+msgid "Number of answers "
+msgstr ""
+
+#: ../templates/admin/premium.php:224
+#, php-format
+msgid ""
+"The more followers has a question, the more answers are likely to be left "
+"for it. If you do not want your product page to get extremely long, enable "
+"%1$sanswer pagination%2$s by specifying the number of elements you want to "
+"show at a time."
+msgstr ""
+
+#: ../templates/admin/premium.php:234
+msgid "Voting system"
+msgstr ""
+
+#: ../templates/admin/premium.php:237
+#, php-format
+msgid ""
+"Increase and improve interaction between users and your shop. With the "
+"premium version of the plugin, you will be able to allow all registered "
+"users to leave a %1$spositive or negative vote%2$s to questions and answers "
+"of each product. A very good strategy to highlight questions and answers "
+"that can be useful to other customers."
+msgstr ""
+
+#: ../templates/admin/premium.php:253
+msgid "Email notification"
+msgstr ""
+
+#: ../templates/admin/premium.php:256
+#, php-format
+msgid ""
+"Keep always up-to-date about what users write in your shop. Enable %1$semail "
+"notification%2$s to be informed any time a new question is added to one of "
+"your products and read the content of it in the email message you get. With "
+"the option %1$s\"User notification\"%2$s, you can notify users as soon as an "
+"answer is given to the question they have previously posed."
+msgstr ""
+
+#: ../templates/admin/premium.php:267
+msgid "Inappropriate content"
+msgstr ""
+
+#: ../templates/admin/premium.php:270
+#, php-format
+msgid ""
+"There might always be someone in the web, who wants to disturb or leave "
+"offensive, inappropriate or simply unsuitable answers. With the premium "
+"version of the plugin, your users will be able to \"monitor\" this kind of "
+"answers on their own and report questions and/or answers that are "
+"inappropriate. %1$sThese answers will be automatically removed%2$s if a "
+"specific number of users that you can set in your plugin reports them as an "
+"abuse."
+msgstr ""
+
+#: ../templates/admin/premium.php:286
+msgid "Incognito mode"
+msgstr ""
+
+#: ../templates/admin/premium.php:289
+#, php-format
+msgid ""
+"Working principles are always the same. Each question will get its own "
+"answers. The only difference is that the name of users who have posed a "
+"question or given an answer will not be shown and they will be %1$sanonymous"
+"%2$s to users of the shop, either they are registered or not."
+msgstr ""
+
+#: ../templates/admin/premium.php:298
+msgid "Invite to answer"
+msgstr ""
+
+#: ../templates/admin/premium.php:301
+#, php-format
+msgid ""
+"Who may better answer to a new question than those who have purchased a "
+"product?  With this innovative feature, you will be able to automatically "
+"%1$ssend an email to customers that have purchased a product%2$s on which a "
+"question has been added and invite them to answer. You can choose to send an "
+"email to all customers or let the plugin select only some of them randomly. "
+msgstr ""
+
+#: ../templates/admin/premium.php:317
+msgid "reCAPTCHA"
+msgstr ""
+
+#: ../templates/admin/premium.php:320
+#, php-format
+msgid ""
+"Make your questions and answers system safer: activate the recaptcha and "
+"avoid all the spam contents you can get.The premium version of the plugin "
+"offers the new version of Google's captcha, the %1$sNo CAPTCHA reCAPTCHA"
+"%2$s, to give you the freedom to use an up-to-date and simple system for "
+"your users."
+msgstr ""
+
 #: ../templates/ywqa-answer-template.php:21
 #, php-format
 msgid "%s answered on %s"
@@ -211,7 +328,7 @@ msgstr ""
 
 #: ../templates/ywqa-answers-template.php:59
 #, php-format
-msgid "Visualization of %s answers"
+msgid "%s answers shown"
 msgstr ""
 
 #: ../templates/ywqa-answers-template.php:69

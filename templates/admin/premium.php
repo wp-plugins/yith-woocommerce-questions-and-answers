@@ -3,6 +3,7 @@
         margin-left: -20px;
         margin-right: -20px;
         font-family: "Raleway",san-serif;
+        overflow-x: hidden;
     }
     .section h1{
         text-align: center;
@@ -220,8 +221,7 @@
                     <h2><?php _e('Number of answers ','ywqa');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __('The more followers has a question, the more answers are likely to be left for it. If you do not want your product page
-                     to get extremely long, enable %1$sanswer pagination%2$s by specifying the number of elements you want to show at a time.', 'ywqa'), '<b>', '</b>');?>
+                    <?php echo sprintf( __('The more followers has a question, the more answers are likely to be left for it. If you do not want your product page to get extremely long, enable %1$sanswer pagination%2$s by specifying the number of elements you want to show at a time.', 'ywqa'), '<b>', '</b>');?>
                 </p>
             </div>
         </div>
@@ -234,8 +234,7 @@
                     <h2><?php _e('Voting system','ywqa');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __( 'Increase and improve interaction between users and your shop. With the premium version of the plugin, you will be able to allow all registered users to leave a %1$spositive or negative vote%2$s to questions and answers of each product.
-                    A very good strategy to highlight questions and answers that can be useful to other customers.','ywqa'),  '<b>', '</b>');?>
+                    <?php echo sprintf( __( 'Increase and improve interaction between users and your shop. With the premium version of the plugin, you will be able to allow all registered users to leave a %1$spositive or negative vote%2$s to questions and answers of each product. A very good strategy to highlight questions and answers that can be useful to other customers.','ywqa'),  '<b>', '</b>');?>
                 </p>
             </div>
             <div class="col-1">
@@ -254,15 +253,11 @@
                     <h2><?php _e( 'Email notification','ywqa');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __( 'Keep always up-to-date about what users write in your shop. Enable %1$semail notification%2$s to be informed any time a new question is added
-                    to one of your products and read the content of it in the email message you get. With the option %1$s"User notification"%2$s,
-                    you can notify users as soon as an answer is given to the question they have previously posed.','ywqa' ),'<b>','</b>' );?>
+                    <?php echo sprintf( __( 'Keep always up-to-date about what users write in your shop. Enable %1$semail notification%2$s to be informed any time a new question is added to one of your products and read the content of it in the email message you get. With the option %1$s"User notification"%2$s, you can notify users as soon as an answer is given to the question they have previously posed.','ywqa' ),'<b>','</b>' );?>
                 </p>
             </div>
         </div>
     </div>
-
-
 
     <div class="section section-odd clear" style="background: url(<?php echo YITH_YWQA_URL ?>assets/images/04-bg.png) no-repeat #f1f1f1; background-position: 15% 100%">
         <div class="landing-container">
@@ -272,10 +267,7 @@
                     <h2><?php _e('Inappropriate content','ywqa');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __( 'There might always be someone in the web, who wants to disturb or leave offensive, inappropriate or simply unsuitable answers.
-                    With the premium version of the plugin, your users will be able to "monitor" this kind of answers on
-                    their own and report questions and/or answers that are inappropriate. %1$sThese answers will be automatically removed%2$s if
-                     a specific number of users that you can set in your plugin reports them as an abuse.','ywqa' ),'<b>','</b>' );?>
+                    <?php echo sprintf( __( 'There might always be someone in the web, who wants to disturb or leave offensive, inappropriate or simply unsuitable answers. With the premium version of the plugin, your users will be able to "monitor" this kind of answers on their own and report questions and/or answers that are inappropriate. %1$sThese answers will be automatically removed%2$s if a specific number of users that you can set in your plugin reports them as an abuse.','ywqa' ),'<b>','</b>' );?>
                 </p>
             </div>
             <div class="col-1">
@@ -294,8 +286,7 @@
                     <h2><?php _e('Incognito mode','ywqa');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __('Working principles are always the same. Each question will get its own answers. The only difference is that the name
-                    of users who have posed a question or given an answer will not be shown and they will be %1$sanonymous%2$s to users of the shop, either they are registered or not.','ywqa'),'<b>','</b>' );?></p>
+                    <?php echo sprintf( __('Working principles are always the same. Each question will get its own answers. The only difference is that the name of users who have posed a question or given an answer will not be shown and they will be %1$sanonymous%2$s to users of the shop, either they are registered or not.','ywqa'),'<b>','</b>' );?></p>
             </div>
         </div>
     </div>
@@ -307,9 +298,7 @@
                     <h2><?php _e('Invite to answer','ywqa');?></h2>
                 </div>
                 <p>
-                    <?php echo sprintf( __( 'Who may better answer to a new question than those who have purchased a product? 
-                    With this innovative feature, you will be able to automatically %1$ssend an email to customers that have purchased a product%2$s on 
-                    which a question has been added and invite them to answer. You can choose to send an email to all customers or let the plugin select only some of them randomly. ','ywqa' ),'<b>','</b>' );?>
+                    <?php echo sprintf( __( 'Who may better answer to a new question than those who have purchased a product?  With this innovative feature, you will be able to automatically %1$ssend an email to customers that have purchased a product%2$s on which a question has been added and invite them to answer. You can choose to send an email to all customers or let the plugin select only some of them randomly. ','ywqa' ),'<b>','</b>' );?>
                 </p>
             </div>
             <div class="col-1">

@@ -5,7 +5,7 @@ Plugin URI: http://yithemes.com
 Description: YITH WooCoomerce Questions And Answers offers a rapid way to manage dynamic discussions about the products of your shop.
 Author: Yithemes
 Text Domain: ywqa
-Version: 1.0.3
+Version: 1.0.4
 Author URI: http://yithemes.com/
 */
 
@@ -45,7 +45,7 @@ if ( ! defined( 'YITH_YWQA_FREE_INIT' ) ) {
 }
 
 if ( ! defined( 'YITH_YWQA_VERSION' ) ) {
-	define( 'YITH_YWQA_VERSION', '1.0.3' );
+	define( 'YITH_YWQA_VERSION', '1.0.4' );
 }
 
 if ( ! defined( 'YITH_YWQA_FILE' ) ) {

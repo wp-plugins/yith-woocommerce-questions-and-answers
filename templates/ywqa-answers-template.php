@@ -56,7 +56,7 @@ $ywqa = YITH_WooCommerce_Question_Answer::get_instance();
 
 	<?php if ( $question_count = $question->has_answers() ) : ?>
 		<span
-			class="answer-list-count"><?php echo sprintf( __( "Visualization of %s answers", "ywqa" ), $question_count ); ?></span>
+			class="answer-list-count"><?php echo sprintf( __( "%s answers shown", "ywqa" ), $question_count ); ?></span>
 		<?php //do_action( 'yith_question_answer_before_question_list' ); ?>
 
 		<ol class="ywqa-answer-list">
